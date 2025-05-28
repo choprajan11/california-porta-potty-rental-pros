@@ -13,6 +13,8 @@ import ReviewWidget from "../Widgets/ReviewWidget";
 import Navbar from "../Navbar";
 import ContactInfo from "@/components/Content/ContactInfo.json";
 import Link from "next/link";
+import PortaPottyCalculator from "../Widgets/Calculator";
+import DumpsterWidget from "../Widgets/DumpsterWidget";
 
 const Hero = () => {
   const cityData: any = content;
@@ -59,9 +61,11 @@ const Hero = () => {
           {/* Section 1 */}
           {/* TYPES */}
           <Service />
+          <DumpsterWidget/>
           {/* TYPES*/}
           <Affordable />
           {/* Section 4 */}
+          <PortaPottyCalculator/>
           <WhyChoose data={homeData.whyChooseSection} />
           {/* Section 4 */}
           {/* Section 1 */}
