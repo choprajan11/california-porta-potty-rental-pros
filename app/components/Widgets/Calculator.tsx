@@ -40,8 +40,8 @@ const PortaPottyCalculator = () => {
             onClick={() => setMode('event')}
             className={`px-5 py-2 rounded-full text-xl font-medium transition-all duration-300 ${
               mode === 'event'
-                ? 'bg-green-600 text-white shadow-md'
-                : 'bg-gray-200 text-gray-700 hover:bg-blue-100'
+                ? 'bg-minor text-white shadow-md'
+                : 'text-white hover:bg-main'
             }`}
           >
             Porta Potty Calculator
@@ -99,14 +99,14 @@ const PortaPottyCalculator = () => {
         {hasCalculated && (
           <div className="text-center mt-8 transition-opacity duration-300 ease-in-out">
             <p className="text-lg text-black-500">Estimated Units Required:</p>
-            <p className="text-5xl font-bold text-green-600">{units}</p>
+            <p className="text-5xl font-bold text-minor">{units}</p>
             <p className="text-xs text-gray-400 mt-1">For {guests || 0} guests & {duration || 0} hour(s)</p>
 
             {/* Contact CTA */}
             <div className="mt-6">
               <a
                 href="/contact"
-                className="inline-block px-6 py-2 bg-green-600 text-white font-medium rounded-full hover:bg-green-700 transition"
+                className="inline-block px-6 py-2 bg-minor text-white font-medium rounded-full hover:bg-main transition"
               >
                 Contact Us
               </a>
